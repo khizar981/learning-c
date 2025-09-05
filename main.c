@@ -1,13 +1,25 @@
 #include <stdio.h>
 
-int main(void) {
-    int a = 5;
-    printf("Printing the table:\n");
+int main() {
+  int mysecretNumber = 98 ;//my scret number
+    int guess;//guess for guessing a number
+   do {
+       printf("Enter a number: ");
+       scanf("%d",&guess);
+       if
+       (guess == mysecretNumber)
+          { printf("your guess is correct!\n");}
+       else
+          { printf("your guess is wrong!\n");}
 
-    for (int i = 1; i <= 100; i++) {
-        printf("%d x %d = %d\n", a, i, a * i);
-    }
+       if (guess < mysecretNumber) {
+           printf("hint: guess is to low\n");}
+          else
+          {printf("guess is to high\n");}
+   }
+       while (guess != mysecretNumber);
 
-    printf("Hello world\n");
+
+
     return 0;
 }
